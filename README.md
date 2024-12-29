@@ -19,3 +19,11 @@ Configuration files for IPFS gateways or API keys (e.g., Pinata or other IPFS pr
 tests/:
 
 Test files for validating JSON metadata or ensuring proper functionality of upload scripts.
+
+## Running scripts
+
+To run a script, use the following command:
+
+```
+node -r dotenv/config {script to run}
+```
