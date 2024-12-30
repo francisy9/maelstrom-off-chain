@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/card-effect.schema.json",
+  "title": "Card Effect",
+  "description": "Schema for defining card effects in the game.",
+  "type": "object",
+  "properties": {
+    "effectTargetType": {
+      "description": "The type of target the effect applies to. E.g. Self, Whole Board, etc.",
+      "type": "string"
+    },
+    "effectType": {
+      "description": "The type of effect the card has. E.g. Buff, Damage, Heal, etc.",
+      "type": "string"
+    },
+    "triggerTime": {
+      "description": "The time the effect is triggered. E.g. On Play, On Death etc.",
+      "type": "string"
+    },
+    "targetSelection": {
+      "description": "How card effects are selected (random, adjacent, etc.)",
+      "type": "string"
+    },
+    "targetable": {
+      "description": "The targetable types for player to select. E.g. All allies, enemy units etc.",
+      "type": "string"
+    },
+    "damageVal": {
+      "description": "The amount of damage dealt.",
+      "type": "integer",
+      "exclusiveMinimum": 0
+    },
+    "healVal": {
+      "type": "integer",
+      "exclusiveMinimum": 0,
+      "description": "Amount of healing provided."
+    },
+    "attackBuffVal": {
+      "type": "integer",
+      "description": "Attack buff value provided."
+    },
+    "hpBuffVal": {
+      "type": "integer",
+      "description": "HP buff value provided."
+    },
+    "buffEffect": {
+      "type": "string",
+      "enum": [
+        "None",
+        "Shield",
+        "Poison",
+        "Rage",
+        "Silence"
+      ]
+    },
+    "needsTargeting": {
+      "type": "boolean",
+      "description": "Whether the effect requires manual targeting."
+    },
+    "numTargets": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of targets the effect applies to."
+    },
+    "spawnUnitCardStatsSO": {
+      "type": "string",
+      "format": "uri",
+      "description": "Reference to a unit card's stats ScriptableObject, if applicable."
+    }
+  },
+  "required": [
+    "effectTargetType",
+    "effectType",
+    "triggerTime"
+  ]
+}
