@@ -31,7 +31,7 @@
             "type": "array",
             "description": "Optional list of card effects associated with the card.",
             "items": {
-                "$ref": "https://example.com/schemas/card-effect.schema.json"
+                "$ref": "https://raw.githubusercontent.com/francisy9/maelstrom-off-chain/refs/heads/main/metadata/cardEffectSchema.json"
             }
         },
         "unitStats": {
