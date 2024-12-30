@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://example.com/schemas/card.schema.json",
+    "$id": "https://raw.githubusercontent.com/francisy9/maelstrom-off-chain/refs/heads/main/metadata/cardSchema.json",
     "title": "Card",
     "description": "Schema for general card metadata.",
     "type": "object",
