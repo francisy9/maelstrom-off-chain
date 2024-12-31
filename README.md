@@ -22,8 +22,10 @@ Test files for validating JSON metadata or ensuring proper functionality of uplo
 
 ## Running scripts
 
-To run a script, use the following command:
+To run a script with dotenv, use the following command:
 
-```
-node -r dotenv/config {script to run}
-```
+```node -r dotenv/config {script to run}```
+
+To run validate card json, use the following command:
+
+```npm run validate -- sampleCard.json```
