@@ -1,0 +1,20 @@
+{
+    "cardName": "Arcane Blast",
+    "cardType": "Spell",
+    "description": "A spell that deals damage to all enemies.",
+    "manaCost": 2,
+    "cardEffects": [
+        {
+            "effectTargetType": "Enemy Board",
+            "effectType": "Damage",
+            "triggerTime": "On Play",
+            "damageVal": 5,
+            "needsTargeting": false,
+            "animationId": "ArcaneExplosion"
+        }
+  ],
+  "spellStats": {
+    "spellDamage": 5
+  }
+}
+    
