@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://raw.githubusercontent.com/francisy9/maelstrom-off-chain/refs/heads/main/metadata/cardSchema.json",
+    "$id": "https://raw.githubusercontent.com/francisy9/maelstrom-off-chain/main/metadata/cardSchema.json",
     "title": "Card",
     "description": "Schema for general card metadata.",
     "type": "object",
@@ -31,7 +31,7 @@
             "type": "array",
             "description": "Optional list of card effects associated with the card.",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/francisy9/maelstrom-off-chain/refs/heads/main/metadata/cardEffectSchema.json"
+                "$ref": "https://raw.githubusercontent.com/francisy9/maelstrom-off-chain/main/metadata/cardEffectSchema.json"
             }
         },
         "unitStats": {
