@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "validate": "node scripts/validate_json.js"
+    "validate": "node scripts/validate_json.js",
+    "upload": "node -r dotenv/config scripts/pinata_upload.js"
   },
   "keywords": [],
   "author": "",

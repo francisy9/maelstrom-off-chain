@@ -9,8 +9,7 @@
             "effectType": "Damage",
             "triggerTime": "On Play",
             "damageVal": 5,
-            "needsTargeting": false,
-            "animationId": "ArcaneExplosion"
+            "needsTargeting": false
         }
   ],
   "spellStats": {

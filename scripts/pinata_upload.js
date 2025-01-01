@@ -1,5 +1,6 @@
 import { PinataSDK } from "pinata-web3";
 import dotenv from "dotenv";
+import cardData from '../metadata/card_data/sampleCard.json' assert { type: 'json' };
 
 dotenv.config();
 
@@ -15,8 +16,11 @@ async function main() {
   }
 
   try {
-    const file = new File(["hello"], "Testing.txt", { type: "text/plain" });
-    const upload = await pinata.upload.file(file);
+    console.log(cardData);
+    const jsonString = JSON.stringify(cardData);
+    const blob = new Blob([jsonString], { type: "application/json" });
+    console.log(blob);
+    const upload = await pinata.upload.file(blob);
     console.log(upload);
   } catch (error) {
     console.log(error);
